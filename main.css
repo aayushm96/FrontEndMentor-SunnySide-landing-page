@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: 'Barlow', 'Fraunces' , sans-serif;
+  color: white;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'sans-serif';
+  font-weight: 400;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  background-image: url(/images/desktop/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header nav {
+  position: relative;
+  margin: 0rem 3rem;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  padding: 0.5rem 2rem;
+}
+
+header nav ul .contact-btn {
+  color: black;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 50px;
+}
+
+header nav ul .contact-btn:hover {
+  color: white;
+  background-color: lightblue;
+}
+
+header nav .menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+header nav .mobile-menu {
+  padding: 1rem;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 5vh;
+  background-color: white;
+  -webkit-clip-path: polygon(95% 13%, 100% 0, 100% 100%, 0 100%, 0 13%);
+          clip-path: polygon(95% 13%, 100% 0, 100% 100%, 0 100%, 0 13%);
+}
+
+header nav .mobile-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+}
+
+header nav .mobile-menu li a {
+  color: black;
+}
+
+header .hero {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .hero h1 {
+  font-family: 'Fraunces';
+  margin-top: 6rem;
+  font-size: 4rem;
+}
+
+header .hero div {
+  margin-top: 3rem;
+}
+
+header .hero div img {
+  display: inline-block;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .card {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .card .card-text {
+  max-width: 70%;
+  color: #25564b;
+  font-family: 'Fraunces';
+}
+
+main .card .card-text > * {
+  margin-bottom: 2rem;
+}
+
+main .card .card-text a {
+  color: inherit;
+  border-bottom: 2px yellow solid;
+}
+
+main .card .card-text a:hover {
+  border-bottom: 2px orangered solid;
+}
+
+main .card-overlay-one {
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .card-overlay-two {
+  background-image: url(/images/desktop/image-photography.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .overlay-text {
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 53%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.clients h1 {
+  text-align: center;
+  color: black;
+  margin: 4rem auto;
+}
+
+.clients .clients-container {
+  width: 70%;
+  margin: 4rem auto;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+}
+
+.clients .clients-container .client {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients .clients-container .client > * {
+  margin-bottom: 1rem;
+}
+
+.clients .clients-container .client img {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 15%;
+}
+
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  padding: 2rem 0.5rem;
+  background-color: #458c7e;
+}
+
+footer .footer-logo a {
+  display: inline-block;
+}
+
+footer .footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-links ul li {
+  padding: 1rem;
+}
+
+footer .footer-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-icons ul li {
+  padding: 1.5rem;
+}
+
+footer .footer-icons ul li svg path {
+  fill: #23303e;
+}
+
+footer .footer-icons ul li svg:hover path {
+  fill: white;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    margin: 0 1rem;
+  }
+  header .hero {
+    height: 40vh;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav .menu-btn {
+    display: block;
+  }
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .clients .clients-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */
